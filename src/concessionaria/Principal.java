@@ -1,9 +1,5 @@
 package concessionaria;
 
-import concessionaria.Carro;
-
-import java.util.Scanner;
-
 public class Principal {
 
     public static void main(String[] args) {
@@ -73,10 +69,11 @@ public class Principal {
         minhaPessoa1.cpf = "111.222.333-44";
         minhaPessoa1.anoNascimento = 1985;
 
-        meuCarro.anoFabricacao = 2021;
+        meuCarro.anoFabricacao = 2013;
         meuCarro.cor = "Preto";
         meuCarro.fabricante = "Honda";
         meuCarro.modelo = "HR-V";
+        meuCarro.precoCompra = 0;
         meuCarro.proprietario = minhaPessoa1;
 
 //        meuCarro.proprietario = new Pessoa();
@@ -84,7 +81,7 @@ public class Principal {
 //        meuCarro.proprietario.cpf = "111.222.333-44";
 //        meuCarro.proprietario.anoNascimento = 1985;
 
-        System.out.println("--------------------------------");
+        /*System.out.println("--------------------------------");
         System.out.println("------ Carro João Marcos -------");
         System.out.printf("Modelo: %s%n", meuCarro.modelo);
         System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
@@ -92,7 +89,7 @@ public class Principal {
         System.out.printf("Cor: %s%n", meuCarro.cor);
         System.out.printf("Proprietário do veículo é %s, portador do CPF nº.: %s  e nascido no ano de %d.%n",
                 meuCarro.proprietario.nome, meuCarro.proprietario.cpf,  meuCarro.proprietario.anoNascimento);
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------");*/
 
         Carro seuCarro = new Carro();
         Pessoa minhaPesso2 = new Pessoa();
@@ -104,14 +101,48 @@ public class Principal {
         seuCarro.cor = "Branco";
         seuCarro.fabricante = "BMW";
         seuCarro.modelo = "X6";
+        seuCarro.precoCompra = 980000;
         seuCarro.proprietario = minhaPesso2;
 
-//        seuCarro.proprietario = new Pessoa();
+
+        meuCarro.imprimirResumoDepreciacaCarro();
+        seuCarro.imprimirResumoDepreciacaCarro();
+
+
+
+        /*double valorRevendaMeuVeiculo = meuCarro.calcularValorRevenda();
+        double valorRevendaSeuVeiculo = seuCarro.calcularValorRevenda();
+        int tempoDeUsoMeuCarro = meuCarro.calcularTempoDeUsoEmAnos();
+        int tempoDeUsoSeuCarro = seuCarro.calcularTempoDeUsoEmAnos();
+
+        System.out.println("---------------------------------------------------");
+        System.out.printf("Tempo de uso (anos): %d anos.%n", tempoDeUsoMeuCarro);
+        System.out.printf("Valor de revenda: R$ %.2f%n", valorRevendaMeuVeiculo);
+        System.out.println("---------------------------------------------------");
+
+        System.out.println("---------------------------------------------------");
+        System.out.printf("Tempo de uso (anos): %d anos.%n", tempoDeUsoSeuCarro);
+        System.out.printf("Valor de revenda: R$ %.2f%n", valorRevendaSeuVeiculo);
+        System.out.println("---------------------------------------------------");*/
+
+       /* System.out.println("---------------------------------------------------");
+        System.out.printf("Tempo de uso (anos): %d anos.%n",meuCarro.ANO_ATUAL - meuCarro.anoFabricacao);
+        System.out.printf("Valor de revenda: R$ %.2f%n", meuCarro.calcularValorRevenda());
+        System.out.println("---------------------------------------------------");
+
+        System.out.println("---------------------------------------------------");
+        System.out.printf("Tempo de uso (anos): %d anos.%n",seuCarro.ANO_ATUAL - seuCarro.anoFabricacao);
+        System.out.printf("Valor de revenda: R$ %.2f%n", seuCarro.calcularValorRevenda());
+        System.out.println("---------------------------------------------------");*/
+
+
+
+        //        seuCarro.proprietario = new Pessoa();
 //        seuCarro.proprietario.nome = "Poliane";
 //        seuCarro.proprietario.cpf = "321.654.987-11";
 //        seuCarro.proprietario.anoNascimento = 1988;
 
-        System.out.println("--------------------------------");
+      /* System.out.println("--------------------------------");
         System.out.println("------- Carro Poliane ----------");
         System.out.printf("Modelo: %s%n", seuCarro.modelo);
         System.out.printf("Ano: %d%n", seuCarro.anoFabricacao);
@@ -119,9 +150,9 @@ public class Principal {
         System.out.printf("Cor: %s%n", seuCarro.cor);
         System.out.printf("Proprietário do veículo é %s, portador do CPF nº.: %s  e nascido no ano de %d.%n",
                 seuCarro.proprietario.nome, seuCarro.proprietario.cpf, seuCarro.proprietario.anoNascimento);
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------");*/
 
-
+        /*
         Carro teuCarro = new Carro();
         Pessoa minhaPessoa3 = new Pessoa();
         minhaPessoa3.nome = "Ellen";
@@ -132,14 +163,14 @@ public class Principal {
         teuCarro.cor = "Vermelho";
         teuCarro.fabricante = "Ferrari";
         teuCarro.modelo = "Coupe 812";
-        teuCarro.proprietario = minhaPessoa3;
+        teuCarro.proprietario = minhaPessoa3;*/
 
 //        teuCarro.proprietario = new Pessoa();
 //        teuCarro.proprietario.nome = "Ellen";
 //        teuCarro.proprietario.cpf = "951.753.856-22";
 //        teuCarro.proprietario.anoNascimento = 2006;
 
-
+/*
         System.out.println("--------------------------------");
         System.out.println("--------- Carro Ellen ----------");
         System.out.printf("Modelo: %s%n", teuCarro.modelo);
@@ -148,7 +179,7 @@ public class Principal {
         System.out.printf("Cor: %s%n", teuCarro.cor);
         System.out.printf("Proprietário do veículo é %s, portador do CPF nº.: %s  e nascido no ano de %d.%n",
                 teuCarro.proprietario.nome, teuCarro.proprietario.cpf, teuCarro.proprietario.anoNascimento);
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------");*/
 
 
     }
